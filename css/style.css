@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Fredoka One');
+* {
+    font-family: 'Open Sans', serif; 
+}
+
+h1,h2,h3 {
+    font-family: 'Fredoka One', serif;
+}
+
+body {
+    margin: 0;
+    background-image: url('../img/blurry.jpg');
+}
+
+html, body{
+    /*overflow: hidden;
+    height: 100%;*/
+}
+
+
+.navbar{  
+    padding-right: 50px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 75px);
+    text-align: right;
+    font-size: 0;
+}
+
+.nav-list{
+    padding: 0;
+}
+
+.nav-item{   
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px 10px 0px;
+}
+
+.open-nav{
+    top: 150px;
+    left: 0px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    padding: 5px 5px 8px 5px;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*Pages*/
+.page{
+    text-align: center;
+    margin: 0;
+    height: 1000px;
+}
+.page-one{
+
+}
+.page-two{
+    background-color: red;
+}
+.page-three{
+    background-color: green;
+}
+.page-four{
+    background-color: blue;
+}
+.page-five{
+    background-color: darkgray;
+}
+
+.page-one-content{
+    display: inline-block;
+    text-align: left;
+    margin: 50px;
+    width: 70%;
+    height: 60%;
+    background: white;
+    transition: margin-left .5s;
+    padding: 20px;
+    border-radius: 5px;
+}
+ /* The side navigation menu */
+.side-nav {
+    text-align: left;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    opacity: 0.9;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
