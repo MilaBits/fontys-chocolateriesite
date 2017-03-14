@@ -3,6 +3,10 @@
     font-family: 'Open Sans', serif; 
 }
 
+p{
+    
+}
+
 h1,h2,h3 {
     font-family: 'Baloo Bhaina', serif;
 }
@@ -59,24 +63,33 @@ html, body{
 }
 
 .open-nav{
-    top: 150px;
+    top: 50px;
     left: 0px;
     position: fixed;
-    background-color: black;
-    color: white;
-    padding: 5px 5px 8px 5px;
+    background-color: darkred;
+    color: antiquewhite;
     text-align: center;
     border-radius: 0px 5px 5px 0px;
+    padding: 10px 10px;
+    font-size: 26px;
+    /*padding: 5px 5px 8px 5px;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+    height: 50px;
+    width: 100px;
+    text-decoration: none;*/
 }
 
 /*Pages*/
 .page{
     text-align: center;
     margin: 0;
-    height: 1000px;
+    height: 100vh;
 }
 .page-one{
-    background-image: url('../img/blurry.jpg');
+    background-image: url('../img/seamlessbeans.jpg');
+    background-repeat: repeat;
+    background-size: 400px;
 }
 .page-two{
     background-color: red;
@@ -91,49 +104,117 @@ html, body{
     background-color: darkgray;
 }
 
-.page-one-content{
-    display: inline-block;
-    text-align: left;
-    margin: 50px;
-    width: 70%;
-    height: 60%;
-    background: white;
-    transition: margin-left .5s;
-    padding: 20px;
+.button{
+    background-color: silver;
     border-radius: 5px;
-}
- /* The side navigation menu */
-.side-nav {
-    text-align: left;
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    opacity: 0.9;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    color: white;
+    padding: 7px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-/* The navigation menu links */
+.content{
+    color: darkred;
+    background: white;
+    text-align: center;
+}
+
+.page-two-content{
+    width: 50%;
+    height: 100%;
+    float:right;    
+    text-align: left;
+}
+.page-two-content p{
+    margin: 0px 20px;   
+}
+
+.product-item{
+    text-align: left;
+    border: solid 1px darkred;
+    border-radius: 5px;
+    margin: 15px 50px;
+    padding-bottom: 5px;
+}
+.product-item:last-of-type{
+    margin-bottom: 5px;
+}
+.product-item h2{
+    line-height: 20px;
+    margin-top: -8px;
+    margin-left: 25%;
+    max-width: 50%;
+    background-color: white;
+}
+.product-item ul{
+    margin-left: 20px;
+}
+
+.product-img{
+    max-width: 70%;
+    max-height: 150px;
+    border-radius: 5px;
+    
+}
+
+.centered{
+    text-align: center;
+    width: 100%;
+}
+
+.page-three-content{
+    display: inline-table;
+    width: 30%;
+    height: 100%;
+    margin: 0 10px auto;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,1);
+}
+.page-three-content p{
+    margin-left:  40px;  
+    margin-right:  40px;  
+}
+
+.temp-content{
+    display: inline-block;
+    width: 60%;
+    height: 60%;
+    margin: 50px;
+    padding: 20px;
+}
+
+.side-nav {
+    text-align: left;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkred;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-right: solid 1px black;
+    box-shadow: 1px 0px 5px black;
+}
+
 .side-nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: antiquewhite;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .side-nav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
 .side-nav .closebtn {
     position: absolute;
     top: 0;
@@ -142,7 +223,6 @@ html, body{
     margin-left: 50px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
