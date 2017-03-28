@@ -1,88 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <title>Chocolaterie Leopold</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/sidebar.js"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/misc-script.js"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="javascript:void(0)" class="nav-item" onclick="scrollToPage('#pageOne')">Home &#9673;</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" onclick="scrollToPage('#pageTwo')">Over Ons &#9673;</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" onclick="scrollToPage('#pageThree')">Aanbod &#9673;</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" onclick="scrollToPage('#pageFour')">Contact &#9673;</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" onclick="scrollToPage('#pageFive')">Contact &#9673;</a></li>
-        </ul>
-    </nav>
-    <nav id="sideNav" class="side-nav">
-        <a id="closeNav" href="javascript:void(0)" class="closebtn">&times;</a>
-        <ul class="nav-list">
-            <li><a href="javascript:void(0)" class="nav-item" id="sidebarPage1">&#9673; Home</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" id="sidebarPage2">&#9673; Over Ons</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" id="sidebarPage3">&#9673; Aanbod</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" id="sidebarPage4">&#9673; Contact</a></li>
-            <li><a href="javascript:void(0)" class="nav-item" id="sidebarPage5">&#9673; Contact</a></li>
-        </ul>
-    </nav>
-    <span id="openNav" class="open-nav">Menu</span>
-
-    <!--Page One-->
-    <section id="pageOne" class="page page-one">
-        <div id="title-triangle">
-            <h1 class="page-title">Chocolaterie Leopold</h1>
-        </div>
-    </section>
-
-    <!--Page Two-->
-    <section id="pageTwo" class="page page-one">
-        <div class="page-two-content content">
-            <h1>Over Ons</h1>
-            <p>
-                Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
-                roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
-                wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
-            </p>
-            <p>
-                Bij ons is het ouderwets genieten voor een ouderwetse prijs! Het lekkerste cadeauwinkeltje van Helmond!
-            </p>
-            <p>
-                Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
-                roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
-                wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
-            </p>
-            <p>
-                Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
-                roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
-                wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
-            </p>
-        </div>
-    </section>
-
-    <!--Page Three-->
-    <section id="pageThree" class="page page-one">
-        <div class="page-three-content content">
-            <h1>Ons Assortiment</h1>
-            <p>
-                Ons assortiment Belgische bonbons bestaat uit luchtige roombonbons met verschillende vullingen.
-            </p>
-            <p>
-                Zo hebben wij o.a. als toevoeging aan de room: mocca, hazelnoot, pistache, hazelnoot praliné, amandel, speculaas crispy,
-                caramel, aardbei, frambozen/bessen, sinas, advocaat, rum, beerenburger, amarenen kers, hazelnoot krokant,
-                room krokant, kaneel en ook alleen room.
-            </p>
-            </br>
-            <div class="product-item">
-                <div class="centered">
-                    <h2>Huidige Acties en Opruimingen</h2>
-                </div>
+    <div class="main">
+        <!--Page One-->
+        <section id="pageOne" class="page page-first centered">
+            <div id="title-triangle">
+                <h1 class="page-title">Chocolaterie Leopold</h1>
+            </div>
+        </section>
+        <!--Page Two-->
+        <section id="pageTwo" class="page page-beans">
+            <div class="page-two-content content">
+                <h1>Over Ons</h1>
                 <p>
-                    Huidige acties bij Chocolaterie Leopold
-                    </>
+                    Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
+                    roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
+                    wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
+                </p>
+                <p>
+                    Bij ons is het ouderwets genieten voor een ouderwetse prijs! Het lekkerste cadeauwinkeltje van Helmond!
+                </p>
+                <p>
+                    Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
+                    roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
+                    wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
+                </p>
+                <p>
+                    Sinds januari 2006 hebben wij in de Kortenaerstraat, even buiten het centrum, een speciaalwinkeltje met exclusieve Belgische
+                    roombonbons en andere specialiteiten van de echte Belgische Callebaut chocolade. Naast de bonbons hebben
+                    wij ook een prachtige cadeaulijn opgebouwd. Voor iedere gelegenheid en in elke prijsklasse (vanaf € 3,50).
+                </p>
+            </div>
+        </section>
+        <!--Page Three-->
+        <section id="pageThree" class="page page-beans centered">
+            <div class="page-three-content content">
+                <h1>Ons Assortiment</h1>
+                <p>
+                    Ons assortiment Belgische bonbons bestaat uit luchtige roombonbons met verschillende vullingen.
+                </p>
+                <p>
+                    Zo hebben wij o.a. als toevoeging aan de room: mocca, hazelnoot, pistache, hazelnoot praliné, amandel, speculaas crispy,
+                    caramel, aardbei, frambozen/bessen, sinas, advocaat, rum, beerenburger, amarenen kers, hazelnoot krokant,
+                    room krokant, kaneel en ook alleen room.
+                </p>
+                <div class="product-item">
+                    <div class="centered">
+                        <h2>Huidige Acties en Opruimingen</h2>
+                    </div>
+                    <p>
+                        Huidige acties bij Chocolaterie Leopold
+                    </p>
                     <ul>
                         <li><a href="">Kerst opruiming!</a></li>
                         <li><a href="">Paasdeal</a></li>
@@ -90,83 +70,139 @@
                     <div class="centered">
                         <a href="" class="button">Alle Acties</a>
                     </div>
-            </div>
-        </div>
-        <div class="page-three-content content">
-            <h1>Cadeaus</h1>
-            <div class="product-item">
-                <div class="row centered">
-                    <div class="row">
-                        <h2>Krijt Blikjes met Spreuken</h2>
-                    </div>
-                    <img src="img/blikjes.jpg" class="product-img">
                 </div>
-                <p>
-                    Dit zijn krijtblikjes met leuke spreuken erop!!
-                </p>
             </div>
-            <div class="product-item">
-                <div class="row centered">
-                    <h2>Kistjes Gevuld met Bonbons<br/></h2>
-                    <div class="row">
-                        <img src="img/kistjes.jpg" class="product-img">
+            <div class="page-three-content content centered">
+                <h1>Cadeaus</h1>
+                <div class="product-item">
+                    <div class="row centered">
+                        <h2>Krijt Blikjes met Spreuken</h2>
+                        <div class="row">
+                            <img src="img/blikjes.jpg" class="product-img" alt="blikjes met spreuken">
+                        </div>
+                        <p>
+                            Dit zijn krijtblikjes met leuke spreuken er op!
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="row centered">
+                        <h2>Kistjes Gevuld met Bonbons<br/></h2>
+                        <div class="row">
+                            <img src="img/kistjes.jpg" class="product-img" alt="kistjes met bonbons">
+                        </div>
+                        <p>
+                            dit zijn chocolade kistjes vol met heerlijke chocolade er in!
+                        </p>
+                    </div>
+                </div>
+                <a href="" class="button">Meer Cadeaus</a>
+            </div>
+            <div class="page-three-content content centered">
+                <h1>Pakketten</h1>
+                <div class="product-item">
+                    <div class="row centered">
+                        <div class="row">
+                            <h2>Spec. kerstpakketten en Luxe Letters</h2>
+                        </div>
+                        <img src="img/pakket.jpg" class="product-img" alt="kerstpakket">
                     </div>
                     <p>
-                        dit zijn chocolade kistjes vol met heerlijke chocolade er in!
+                        Luxe gedecoreerde chocolade letters van 100% fair trade Callebaut chocolade en voor de Kerst: Chocolade kerstpakketten!
                     </p>
-                </div>
-            </div>
-            <a href="" class="button">Meer Cadeaus</a>
-        </div>
-        <div class="page-three-content content">
-            <h1>Pakketten</h1>
-            <div class="product-item">
-                <div class="row centered">
-                    <div class="row">
-                        <h2>Spec. kerstpakketten en Luxe Letters</h2>
+                    <ul>
+                        <li>chocolade Kersklok</li>
+                        <li>2 likeurglaasjes</li>
+                        <li>2 koffie mokken</li>
+                        <li>grote fles koffie likeur 14,5%</li>
+                        <li>doos Belgische roombonbons van 500 gram</li>
+                        <li>in luxe lectuurmand</li>
+                        <li>2 koffie mokken</li>
+                    </ul>
+                    <div class="centered">
+                        <a href="" class="button">Lees Verder</a>
                     </div>
-                    <img src="img/pakket.jpg" class="product-img">
                 </div>
-                <p>
-                    Luxe gedecoreerde chocolade letters van 100% fair trade Callebaut chocolade en voor de Kerst: Chocolade kerstpakketten!
-                </p>
-                <ul>
-                    <li>chocolade Kersklok</li>
-                    <li>2 likeurglaasjes</li>
-                    <li>2 koffie mokken</li>
-                    <li>grote fles koffie likeur 14,5%</li>
-                    <li>doos Belgische roombonbons van 500 gram</li>
-                    <li>in luxe lectuurmand</li>
-                    <li>2 koffie mokken</li>
-                </ul>
-                <div class="centered">
-                    <a href="" class="button">Lees Verder</a>
+                <a href="" class="button">Meer Pakketten</a>
+            </div>
+        </section>
+        <!--Page Four-->
+        <section id="pageFour" class="page page-beans">
+            <div>
+                <div class="row footer-page"></div>
+                <div class="row footer-top">
+                    <div class="contact row-third">
+                        <h1 class="contact-title">Vraag of Bericht?</h1>
+                        <form action="mail.php" method="POST">
+                            <div class="form-half">
+                                <input type="text" name="name" placeholder="*Naam" class="textbox">
+                                <input type="text" name="lastname" placeholder="*Achternaam" class="textbox">
+                                <input type="email" name="email" placeholder="*E-Mail" class="textbox">
+                                <input type="tel" name="tel" placeholder="Telefoonnr." class="textbox">
+                                <button class="button button-submit" type="submit" value="submit">Verstuur</button>
+                            </div>
+                            <div class="form-half">
+                                <textarea name="name" placeholder="*Naam" rows="9" class="textbox"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row-third">
+                        <h1 class="contact-title">Chocolaterie Leopold</h1>
+                        <div class="info">
+                            <p>Adres: Kortenaerstraat 21<br> Postcode: 5703CA Helmond<br></p>
+                            <p>Tel: 0492-474810<br> Tel: 06-28818011<br></p>
+                            <p>KvK: 54286204</p>
+                        </div>
+                        <table class="timetable">
+                            <tr>
+                                <th class="table-head">Openingstijden</th>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Maandag</td>
+                                <td class="timetable-cell">Gesloten</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Dinsdag</td>
+                                <td class="timetable-cell">Gesloten</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Woensdag</td>
+                                <td class="timetable-cell">10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Donderdag</td>
+                                <td class="timetable-cell">10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Vrijdag</td>
+                                <td class="timetable-cell">10:00 - 18:00</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Zaterdag</td>
+                                <td class="timetable-cell">10:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td class="timetable-cell">Zondag</td>
+                                <td class="timetable-cell">Gesloten</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row-third">
+                        <h1 class="contact-title">Locatie</h1>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9939.996775233656!2d5.6824411!3d51.4765291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc722ff81283ce5e!2sChocolaterie+Leopold!5e0!3m2!1sen!2snl!4v1490105160153"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row footer-bottom">
+                    <div class="row social-media-bar">
+                        <a href="" class="fa fa-rss"></a>
+                        <a href="" class="fa fa-twitter"></a>
+                        <a href="" class="fa fa-facebook"></a>
+                    </div>
                 </div>
             </div>
-            <a href="" class="button">Meer Pakketten</a>
-        </div>
-    </section>
-
-    <!--Page Four-->
-    <section id="pageFour" class="page page-one">
-        <div class="temp-content content">
-            <h1>Home</h1>
-            <p>
-                ldkdsffkjdkj<br>asdasdsa <br>awdwadagsdfsdf
-            </p>
-        </div>
-    </section>
-
-    <!--Page Five-->
-    <section id="pageFive" class="page page-one">
-        <div>
-            <div class="row footer-page"></div>
-            <div class="row footer-top"></div>
-            <div class="row footer-bottom">
-                
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 
 </html>
